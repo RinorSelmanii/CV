@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    line-height: 1.6;
+}
+
+.profile-pic {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px auto;
+    border: 2px solid white;
+}
+
+aside {
+    background-color: lightblue;
+    width: 300px;
+    padding: 20px;
+    margin-right: 80px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding: 40px;
+    overflow: hidden;
+    max-width: 700px;
+}
+
+aside h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: medium;
+    margin-top: 0;
+}
+
+aside h2 {
+    margin-top: 50px;
+    font-size: 18px;
+    border-bottom: 1px solid #f7f3f3;
+    padding-bottom: 5px;
+}
+
+.skills-section h3 {
+    margin: 20px 0 10px 0;
+    font-size: 16px;
+    color: #222;
+}
+
+.skills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skills li {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+section h2 {
+    font-weight: bold;
+    margin-top: 50px;
+    border-bottom: 1px solid lightblue;
+    padding-bottom: 5px;
+}
+
+section p {
+    font-size: medium;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.git-link {
+    text-align: center;
+    display: block;
+    padding: 6px 10px;
+    margin-top: 5px;
+    color: white;
+    background-color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.git-link:hover {
+    background: #444c56;
+}
+
+footer{
+    text-align: center;
+}
+
+.download{
+    display: block;
+    text-align: center;
+    padding: 8px 12px;
+    margin-top: 15px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.download:hover {
+    background: #444c56;
+}
+
+/* Mobile responsive */
+@media print {
+    body{
+        width: 210mm;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: white;
+        color: black;
+    }
+
+    aside, main {
+        page-break-inside: avoid;
+    }
+
+    aside {
+        padding: 10px;
+    }
+    main{
+        padding: 20px;
+    }
+ 
+}
