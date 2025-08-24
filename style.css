@@ -153,3 +153,52 @@ footer{
     }
  
 }
+
+#darkModeToggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    z-index: 1000;
+}
+
+
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode aside {
+    background-color: #1e2a35;
+}
+
+.dark-mode .skills li {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+.dark-mode .mail-link{
+    color: white;
+}
+.dark-mode .git-link,
+.dark-mode .download {
+    background-color: #555;
+    color: #fff;
+}
+
+.dark-mode .git-link:hover,
+.dark-mode .download:hover {
+    background-color: #777;
+}
+
+.dark-mode section h2 {
+    border-bottom: 1px solid #555;
+}
+
+.dark-mode aside h3{
+    color: white;
+}
