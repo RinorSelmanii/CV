@@ -7,6 +7,8 @@
 </head>
 <body>
 
+    <button id="darkModeToggle">Lunar</button>
+
     <aside>
         <img src="earth-aspot-met-12.jpg" class="profile-pic">
 
@@ -14,7 +16,7 @@
         <p class="subtitle"><strong>Computer Science Student</strong></p>
 
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:rinorselmani99@gmail.com">rinorselmani99@gmail.com</a></p> 
+        <p>Email: <a href="mailto:rinorselmani99@gmail.com" class = "mail-link">rinorselmani99@gmail.com</a></p> 
         <p><a href="https://github.com/RinorSelmanii" target="_blank" rel="noopener noreferrer" class="git-link">GitHub</a></p>
 
         <h2>Skills</h2>
@@ -78,6 +80,20 @@
             Rinor Selmani | CV
         </footer>
     </main>
+
+          <script>
+        const toggleBtn = document.getElementById("darkModeToggle");
+
+        toggleBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+                toggleBtn.textContent = "Solar";
+            } else {
+                toggleBtn.textContent = "Lunar";
+            }
+        });
+    </script>
 
 </body>
 </html>
